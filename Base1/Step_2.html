@@ -3,7 +3,59 @@
     <head>
         <title>Step 2</title>
         <meta charset="UTF-8">
+        <style>
+            #likeImg1{
+                border: 1px solid black;
+                width: 200px;
+                height: 120px;
+                position: relative;
+            }
+            #likeImg{
+                margin-left: 25%;
+                width: 100%;
+                margin-top: 5%;
+                height: 60%;
+
+            }
+            #likeImg2{
+                background-color: aliceblue;
+                height: 30%;
+                /* position: absolute; */
+                /* bottom: 0;s */
+            }
+            #hiButton{
+                float: right;
+                margin-right: 5%;
+                margin-top: 5%;
+                width: 35%;
+                height: 20px;
+                border-radius: 5px;
+                border: none;
+                background-color: rgb(240, 236, 236)
+            }
+        </style>
     </head>
     <body>
+        <div id="likeImg1">
+            <div id="likeImg">
+            </div>
+            <div id="likeImg2">
+                <button id='hiButton'>OK</button>
+            </div>
+        </div>
+        <script>
+            var name = 'fadi';
+            var surname = 'hello';
+            var city = 'Beirut';
+
+            function myFunction() {
+                var result = 'Nom : ' + name + '<br />' + 'Prenom : ' + surname + '<br />' + 'Ville : ' + city ;
+                return result;
+            }
+
+            document.getElementById('likeImg').innerHTML = myFunction();
+        </script>
+
+
     </body>
 </html>
