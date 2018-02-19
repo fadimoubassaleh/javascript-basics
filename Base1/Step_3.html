@@ -5,5 +5,15 @@
         <meta charset="UTF-8">
     </head>
     <body>
+        <input type='text' id='inputName' />
+        <div id='Button'></div>
+        <script>
+            var InputName = document.getElementById('inputName')
+            function sayHello(){
+                console.log(InputName.value)
+                alert(InputName.value)
+            }
+            document.getElementById('Button').innerHTML = '<button onClick="sayHello()" >hi'
+        </script>
     </body>
 </html>
