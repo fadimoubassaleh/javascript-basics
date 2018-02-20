@@ -10,4 +10,14 @@
             <button id="validate" name="validate">validate</button>
         </form>
     </body>
+    <script>
+        var Age = document.getElementById('age')
+        function getAge(){
+            if (age.value < 19){
+                alert('you are under 18')
+            }else 
+                alert('you are over 18')
+        }
+        document.getElementById('validate').addEventListener('click', getAge)
+    </script>
 </html>
