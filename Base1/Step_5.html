@@ -5,10 +5,22 @@
         <meta charset="UTF-8">
     </head>
     <body>
-        <form>
-            <label for="first_number">first number : </label><input type="text" id="first_number" name="first_number"/><br/>
-            <label for="second_number">second number : </label><input type="text" id="second_number" name="second_number"/><br/>
-            <button  id="validate" name ="validate">validate</button>
+        <form >
+            <label for="first_number">first number : </label>
+                <input type="text" id="first_number" name="first_number"/><br/>
+            <label for="second_number">second number : </label>
+                <input type="text" id="second_number" name="second_number"/><br/>
+            <button  id="validate" name ="validate" onclick="getMath()">validate</button>
         </form>
+        <script>
+            function getMath(){
+                var first = document.getElementById('first_number')
+                var second = document.getElementById('second_number')
+                var goMath = parseInt(first.value) + parseInt(second.value);
+
+                alert(goMath)
+
+            }
+        </script>
     </body>
 </html>
