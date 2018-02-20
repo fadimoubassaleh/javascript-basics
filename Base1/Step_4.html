@@ -6,10 +6,26 @@
     </head>
     <body>
         <form>
-            <label for="name">name : </label><input type="text" name="name" id="name"/>
-            <label for="surname">surname : </label><input type="text" name="surname" id="surname"/>
-            <label for="city">city : </label><input type="text" name="city" id="city"/>
-            <button  name="validate" id="validate">Validate</button>
+            <label for="name">name : </label>
+                <input type="text" name="name" id="name"/>
+            <label for="surname">surname : </label>
+                <input type="text" name="surname" id="surname"/>
+            <label for="city">city : </label>
+                <input type="text" name="city" id="city"/>
+            <button  name="validate" id="validate" onclick="sayHello()  ">Validate</button>
         </form>
+        <script>
+            function sayHello(){
+                console.log('Hello')
+                var nameIn = document.getElementById('name')
+                var surnameIn = document.getElementById('surname')
+                var cityIn = document.getElementById('city')
+                
+                alert('name: ' + nameIn.value + 
+                        'surname: ' + surnameIn.value +
+                        'city: ' + cityIn.value )
+            }
+        
+        </script>
     </body>
 </html>
