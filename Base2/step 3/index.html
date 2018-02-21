@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Step 3</title>
-</head>
-<body>
-  <form>
-    <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
-  </form>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Step 3</title>
+  </head>
+  <body>
+    <form>
+      <label for="name">Your name  : </label><input type="text" name="name" value="" id="name"/>
+    </form>
+    <div id="test"></div>
+  </body>
+  <script>
+    var target = document.querySelector('#test')  
+    var target2 = document.querySelector('#name')
+    function change(){
+      console.log('hi')
+      var test = target2.value
+      return target.innerHTML = test
+    }
+    target2.addEventListener('change', change)
+  </script>
 </html>
