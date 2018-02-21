@@ -7,4 +7,12 @@
   <body>
       <img src="images/image1.jpg" id="image1"/>
   </body>
+
+  <script>
+    var imagE = document.querySelector('img')
+    function addStyle(){
+      imagE.style.border = '3px solid red'
+    }
+    imagE.addEventListener('mouseover', addStyle)
+  </script>
 </html>
