@@ -13,4 +13,21 @@
       <img src="images/image5.jpg" id="image5" />
     </div>
   </body>
+  <script>
+    // var test = document.querySelectorAll('img').src
+    var test1 = document.querySelectorAll('img')
+    console.log(test1[1].src)
+    console.log(test1.length)
+
+    function change(){
+      console.log('hi')
+      for (i=0;i<test1.length;i++){
+        var hi1 = test1[i].src
+        var hi2 = hi1.replace('.jpg', '_2.jpg')
+        test1[i].src = hi2
+      }
+    }
+    document.querySelector('.container').addEventListener('mouseover', change)
+  </script>
+
 </html>
