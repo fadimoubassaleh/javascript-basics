@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>Step 4</title>
-</head>
-<body>
-  <form>
-    <label for="password">password : </label><input type="text" name="password" value="" id="password" />
-    <label for="confirmation">Confirm : </label><input type="text" name="confirmation" value="" id="confirmation" />
-    <button type="button" name="button" >Test</button>
-  </form>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Step 4</title>
+  </head>
+  <body>
+    <form>
+      <label for="password">password : </label><input type="text" name="password" value="" id="password" />
+      <label for="confirmation">Confirm : </label><input type="text" name="confirmation" value="" id="confirmation" />
+      <button type="button" name="button" >Test</button>
+    </form>
+  </body>
+  <script>
+    function change(){
+      var test = document.querySelectorAll('input')
+      if (test[0].value != test[1].value){
+        for(i=0; i<test.length ;i++){
+          test[i].style.border = '3px solid red';
+        }
+      }
+    }
+    document.querySelector('button').addEventListener('click', change)
+  </script>
 </html>
