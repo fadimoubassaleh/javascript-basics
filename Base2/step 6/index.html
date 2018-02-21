@@ -11,4 +11,25 @@
       <img src="images/image4.jpg" id="image4" />
       <img src="images/image5.jpg" id="image5" />
   </body>
+
+  <script>
+    var imageS = document.querySelectorAll('img')
+
+    function changeIN(){
+      for (i=0;i<imageS.length;i++){
+        var src1 = imageS[i].src;
+        var src2 = src1.replace('.jpg', '_2.jpg')
+        imageS[i].src = src2
+      }
+    }
+    function changeOUT(){
+      for (i=0;i<imageS.length;i++){
+        var src1 = imageS[i].src;
+        var src2 = src1.replace('_2.jpg', '.jpg')
+        imageS[i].src = src2
+      }
+    }
+    document.querySelector('body').addEventListener('mouseenter', changeIN)
+    document.querySelector('body').addEventListener('mouseleave', changeOUT)
+  </script>
 </html>
