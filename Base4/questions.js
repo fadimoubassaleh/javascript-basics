@@ -9,7 +9,7 @@ var concatString = function (text1, text2) {
     return text1 = text1.concat(text2);
 }
 var showChar5 = function (text) {
-    return text.substring(4,5)
+    return text.charAt(4)
 }
 var showChar9 = function (text) {
     return text.substring(0,9)
@@ -24,7 +24,7 @@ var removeSpaces = function (text) {
     return text.trim();
 }
 var IsString = function (text) {
-
+    // return text.IsString();
 }
 
 var getExtension = function (text) {
