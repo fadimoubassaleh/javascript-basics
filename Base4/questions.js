@@ -105,7 +105,7 @@ var createLanguagesArray = function () {
     return ["Html","CSS","Java","PHP"]
 }
 var createNumbersArray = function () {
-
+    return [0,1,2,3,4,5]
 }
 
 var replaceElement = function (languages) {
