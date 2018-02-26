@@ -24,7 +24,12 @@ var removeSpaces = function (text) {
     return text.trim();
 }
 var IsString = function (text) {
-    // return text.IsString();
+    var test = typeof(text);
+    if(test == "string"){
+        return true;
+    }else{
+        return false;
+    }
 }
 
 var getExtension = function (text) {
