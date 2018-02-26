@@ -91,6 +91,9 @@ var circleSurface = function (radius) {
     return Math.round(test)
 }
 var hypothenuse = function (ab, ac) {
+    var test = (ab * ab) + (ac * ac)
+    return Math.sqrt(test)
+    console.log(test)
 
 }
 var BMI = function (weight, height) {
