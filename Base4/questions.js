@@ -137,7 +137,9 @@ var removeLast = function (languages) {
 }
 
 var convertStrToArr = function (social_arr) {
-
+    var test = social_arr.split(',')
+    console.log(test)
+    return test
 }
 
 var convertArrToStr = function (languages) {
