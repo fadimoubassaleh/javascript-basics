@@ -67,7 +67,11 @@ var power = function (x, y) {
     return Math.pow(x, y)
 }
 var absoluteValue = function (num) {
-
+    if(num < 0){
+        return num * -1;
+    }else{
+        return num
+    }
 }
 var absoluteValueArray = function (array) {
 
