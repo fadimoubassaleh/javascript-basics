@@ -110,16 +110,20 @@ var createNumbersArray = function () {
 
 var replaceElement = function (languages) {
     languages[2] = 'Javascript'
+    console.log(languages)
     return languages
 }
 
 var addElement = function (languages) {
     languages.push('Ruby', 'Python')
+    console.log(languages)
     return languages
 }
 
 var addNumberElement = function (numbers) {
-
+    numbers.unshift(-2, -1)
+    console.log(numbers)
+    return numbers
 }
 
 var removeFirst = function (languages) {
