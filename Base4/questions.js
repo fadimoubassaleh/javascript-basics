@@ -18,7 +18,7 @@ var toCapitals = function (text) {
     return text.toUpperCase();
 }
 var toLowerCase = function (text) {
-
+    return text.toLowerCase();
 }
 var removeSpaces = function (text) {
 
