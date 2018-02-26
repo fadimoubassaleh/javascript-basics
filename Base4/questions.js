@@ -97,7 +97,8 @@ var hypothenuse = function (ab, ac) {
 
 }
 var BMI = function (weight, height) {
-
+    var test = (weight / (height * height)).toFixed(2)
+    return(parseFloat(test))
 }
 
 var createLanguagesArray = function () {
