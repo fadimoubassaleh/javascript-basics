@@ -12,7 +12,7 @@ var showChar5 = function (text) {
     return text.substring(4,5)
 }
 var showChar9 = function (text) {
-
+    return text.substring(0,9)
 }
 var toCapitals = function (text) {
 
