@@ -143,7 +143,9 @@ var convertStrToArr = function (social_arr) {
 }
 
 var convertArrToStr = function (languages) {
-
+    var test = languages.join()
+    console.log(test)
+    return test
 }
 
 var sortArr = function (social_arr) {
