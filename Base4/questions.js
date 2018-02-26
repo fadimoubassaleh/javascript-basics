@@ -64,7 +64,7 @@ var InverseString = function (text) {
 }
 
 var power = function (x, y) {
-
+    return Math.pow(x, y)
 }
 var absoluteValue = function (num) {
 
