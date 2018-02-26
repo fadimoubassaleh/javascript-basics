@@ -153,5 +153,5 @@ var sortArr = function (social_arr) {
 }
 
 var invertArr = function (social_arr){
-
+    return social_arr.reverse()
 }
