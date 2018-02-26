@@ -74,7 +74,12 @@ var absoluteValue = function (num) {
     }
 }
 var absoluteValueArray = function (array) {
-
+    for(i = 0;i < array.length;i++){
+        if(array[i] < 0){
+            array[i] *= -1;
+        }
+    }
+    return array;
 }
 var circleSurface = function (radius) {
 
