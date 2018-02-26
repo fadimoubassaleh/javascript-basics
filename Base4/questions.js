@@ -132,7 +132,8 @@ var removeFirst = function (languages) {
 }
 
 var removeLast = function (languages) {
-
+    languages.pop()
+    return languages
 }
 
 var convertStrToArr = function (social_arr) {
