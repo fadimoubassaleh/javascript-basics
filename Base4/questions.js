@@ -1,12 +1,12 @@
 
 var stringSize = function (text) {
-    return text.length 
+    return text.length;
 }
 var replaceCharacterE = function (text) {
-    return text.replace('e', ' ')
+    return text.replace('e', ' ');
 }
 var concatString = function (text1, text2) {
- 
+    return text1 = text1.concat(text2);
 }
 var showChar5 = function (text) {
 
