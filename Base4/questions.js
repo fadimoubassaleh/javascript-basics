@@ -114,7 +114,8 @@ var replaceElement = function (languages) {
 }
 
 var addElement = function (languages) {
-
+    languages.push('Ruby', 'Python')
+    return languages
 }
 
 var addNumberElement = function (numbers) {
