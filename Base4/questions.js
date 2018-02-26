@@ -33,7 +33,8 @@ var IsString = function (text) {
 }
 
 var getExtension = function (text) {
-
+    var test = text.split('.')
+    return test[(test.length - 1)]
 }
 var countSpaces = function (text) {
 
