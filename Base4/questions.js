@@ -15,7 +15,7 @@ var showChar9 = function (text) {
     return text.substring(0,9)
 }
 var toCapitals = function (text) {
-
+    return text.toUpperCase();
 }
 var toLowerCase = function (text) {
 
