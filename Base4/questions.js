@@ -102,9 +102,8 @@ var BMI = function (weight, height) {
 }
 
 var createLanguagesArray = function () {
-
+    return ["Html","CSS","Java","PHP"]
 }
-
 var createNumbersArray = function () {
 
 }
