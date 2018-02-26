@@ -41,10 +41,10 @@ var countSpaces = function (text) {
     return test.length;
 }
 var InverseString = function (text) {
-    // var test = text.split("");
-    // test = test.reverse();
-    // console.log(test)
-    // var test1 = "";
+    var test = text.split("");
+    test = test.reverse();
+    console.log(test)
+    var test1 = "";
     // for (i = 0;i < test.length;i++){
     //     if(test[i] == "'"){
     //         test[i] = "\\'"
@@ -56,11 +56,11 @@ var InverseString = function (text) {
 
     // test[test.length - 1] += "'"
 
-    // for (i = 0;i < test.length;i++){
-    //     test1 = test1 + test[i]
-    //     console.log(test1);
-    // }
-    // console.log(test1);
+    for (i = 0;i < test.length;i++){
+        test1 = test1 + test[i]
+        console.log(test1);
+    }
+    return(test1);
 }
 
 var power = function (x, y) {
