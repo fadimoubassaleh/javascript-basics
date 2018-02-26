@@ -41,26 +41,26 @@ var countSpaces = function (text) {
     return test.length;
 }
 var InverseString = function (text) {
-    var test = text.split("");
-    test = test.reverse();
-    console.log(test)
-    var test1 = "";
-    for (i = 0;i < test.length;i++){
-        if(test[i] == "'"){
-            test[i] = "\\'"
-        }
-    }
-    test2 = test[0]
-    test[0] = "'";
-    test[0] += test2;
+    // var test = text.split("");
+    // test = test.reverse();
+    // console.log(test)
+    // var test1 = "";
+    // for (i = 0;i < test.length;i++){
+    //     if(test[i] == "'"){
+    //         test[i] = "\\'"
+    //     }
+    // }
+    // test2 = test[0]
+    // test[0] = "'";
+    // test[0] += test2;
 
-    test[test.length - 1] += "'"
+    // test[test.length - 1] += "'"
 
-    for (i = 0;i < test.length;i++){
-        test1 = test1 + test[i]
-        console.log(test1);
-    }
-    console.log(test1);
+    // for (i = 0;i < test.length;i++){
+    //     test1 = test1 + test[i]
+    //     console.log(test1);
+    // }
+    // console.log(test1);
 }
 
 var power = function (x, y) {
@@ -82,7 +82,13 @@ var absoluteValueArray = function (array) {
     return array;
 }
 var circleSurface = function (radius) {
-
+    var test = radius / 2;
+    test *= test
+    test *= 3.14
+    test *= 4
+    test = Math.round(test)
+    console.log(test)
+    return Math.round(test)
 }
 var hypothenuse = function (ab, ac) {
 
