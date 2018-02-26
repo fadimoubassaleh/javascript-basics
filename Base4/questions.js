@@ -21,7 +21,7 @@ var toLowerCase = function (text) {
     return text.toLowerCase();
 }
 var removeSpaces = function (text) {
-
+    return text.trim();
 }
 var IsString = function (text) {
 
