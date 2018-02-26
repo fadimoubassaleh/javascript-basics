@@ -37,7 +37,8 @@ var getExtension = function (text) {
     return test[(test.length - 1)]
 }
 var countSpaces = function (text) {
-
+    var test = text.match(/ /g);
+    return test.length;
 }
 var InverseString = function (text) {
 
