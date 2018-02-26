@@ -109,7 +109,8 @@ var createNumbersArray = function () {
 }
 
 var replaceElement = function (languages) {
-
+    languages[2] = 'Javascript'
+    return languages
 }
 
 var addElement = function (languages) {
