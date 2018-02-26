@@ -1,9 +1,9 @@
 
 var stringSize = function (text) {
-    return text.length
+    return text.length 
 }
 var replaceCharacterE = function (text) {
-
+    return text.replace('e', ' ')
 }
 var concatString = function (text1, text2) {
  
