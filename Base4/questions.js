@@ -145,11 +145,11 @@ var convertStrToArr = function (social_arr) {
 var convertArrToStr = function (languages) {
     var test = languages.join()
     console.log(test)
-    return test
+    return test 
 }
 
 var sortArr = function (social_arr) {
-
+    return social_arr.sort()
 }
 
 var invertArr = function (social_arr){
