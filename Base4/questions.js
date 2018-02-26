@@ -127,7 +127,8 @@ var addNumberElement = function (numbers) {
 }
 
 var removeFirst = function (languages) {
-
+    languages.shift()
+    return languages
 }
 
 var removeLast = function (languages) {
